@@ -94,7 +94,7 @@ string learner_webster(string search){
         // CURLcode res;
         search = lowercase(search);
         std::string readBuffer;
-        std::string key = "60a0e1ee-b2cc-40f4-9210-787f278c8964";
+        std::string key = "";
         std::string link = "https://www.dictionaryapi.com/api/v3/references/learners/json/" + search + "?key=" + key;
         curl = curl_easy_init();
         if(curl){
