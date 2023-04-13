@@ -1,3 +1,6 @@
+//https://github.com/arashnm80/nm80-dictionary-bot
+
+
 #include <iostream>
 #include <curl/curl.h>
 #include <stdio.h>
