@@ -27,55 +27,55 @@ string formatter(string text){
     size_t pos;
     
     first = "{bc}";
-    second = "<strong>: </strong>";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
     
     first = "{it}";
-    second = "<i>";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
     
     first = "{/it}";
-    second = "</i>";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
     
     first = "{b}";
-    second = "<strong>";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
     
     first = "{/b}";
-    second = "</strong>";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
 
     first = "{phrase}";
-    second = "<strong>";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
     
     first = "{/phrase}";
-    second = "</strong>";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
     
     first = "{ldquo}";
-    second = "\"";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
     
     first = "{rdquo}";
-    second = "\"";
+    second = " ";
     while(string::npos != (pos = text.find(first))){
         text.replace(pos, first.size(), second);
     }
@@ -106,7 +106,7 @@ string learner_webster(string search){
             json j = json::parse(readBuffer);
             stringstream out;
            // dic_log << "-------------------------------------------------\n";
-           cout<<"-------------------------------------------------\n";
+           cout<<"=========================================================\n";
             for(unsigned entry = 0; entry < j.size(); entry++){
                 try{
                     if(!j[entry]["meta"]["app-shortdef"].empty()){
@@ -119,24 +119,22 @@ string learner_webster(string search){
                                 
                             }
                            // dic_log << entry_title << endl;
-                           //cout<<entry_title << endl;
-                            out << "<strong>" << formatter(entry_title)
-                                    << functional_label
-                                    << ": \n" << "</strong>";
+                           cout<<"Searched term: \t"<<entry_title << endl;
+                            out << " " << formatter(entry_title)<<functional_label<< ": \n" << " ";
                             for(unsigned def = 0; def < j[entry]["meta"]["app-shortdef"]["def"].size(); def++){
                                 string app_def_title;
                                 if("" == j[entry]["meta"]["app-shortdef"]["def"][def]){
-                                    out << "<strong> :  </strong>" << formatter(j[entry]["shortdef"][def].get<string>()) << "\n";
+                                    out << " " << formatter(j[entry]["shortdef"][def].get<string>()) << "\n";
                                     break;
                                 }
                                 app_def_title = j[entry]["meta"]["app-shortdef"]["def"][def].get<string>();
                                 out << formatter(app_def_title);
                                 // dic_log << "\tdebug:\t" << entry << "\t" << app_def_title << endl;
-                                cout<<"\tdebug:" << entry << "" << app_def_title << endl;
+                                cout<<" " << entry << "" << app_def_title << endl;
                                 if(!j[entry]["shortdef"][0].empty()){
                                     string def_title = j[entry]["shortdef"][0].get<string>();
                                     if(string("{/it}") == app_def_title.substr(app_def_title.size() - 5)){
-                                        out << "<strong> :  </strong>" << formatter(def_title);
+                                        out << " " << formatter(def_title);
                                     }
                                 }
                                 out << "\n";
