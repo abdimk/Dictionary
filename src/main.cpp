@@ -132,7 +132,7 @@ string learner_webster(string search){
                                 app_def_title = j[entry]["meta"]["app-shortdef"]["def"][def].get<string>();
                                 out << formatter(app_def_title);
                                 // dic_log << "\tdebug:\t" << entry << "\t" << app_def_title << endl;
-                                cout<<"\tdebug:\t" << entry << "\t" << app_def_title << endl;
+                                cout<<"\tdebug:" << entry << "" << app_def_title << endl;
                                 if(!j[entry]["shortdef"][0].empty()){
                                     string def_title = j[entry]["shortdef"][0].get<string>();
                                     if(string("{/it}") == app_def_title.substr(app_def_title.size() - 5)){
@@ -164,10 +164,12 @@ string learner_webster(string search){
 
 int main(){
 
+    std::string qurey;
+    cout<<"Enter a word to search: ";
+    cin>>qurey;
+    cout<<learner_webster(qurey)<<endl;
 
-    string qurey = learner_webster("dog");
-
-    cout<<qurey<<endl;
+    
 
 
     return 0;
