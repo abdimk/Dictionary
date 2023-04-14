@@ -1,5 +1,7 @@
 #include <iostream>
 #include <curl/curl.h>
+#include "Art.h"
+#include "pro.h"
 #include <stdio.h>
 #include <unistd.h>
 #include "json.hpp"
@@ -11,16 +13,6 @@ size_t write_to_string(void *ptr, size_t size, size_t count, void *stream) {
   ((string*)stream)->append((char*)ptr, 0, size*count);
   return size*count;
 }
-
-string lowercase(string text){
-    for(auto & c : text){
-        if(c >= 65 && c <= 90){
-            c += 32;
-        }
-    }
-    return text;
-}
-
 
 string formatter(string text){
     string first, second;
@@ -83,6 +75,16 @@ string formatter(string text){
     return text;
 }
 
+string lowercase(string text){
+    for(auto & c : text){
+        if(c >= 65 && c <= 90){
+            c += 32;
+        }
+    }
+    return text;
+}
+
+
 
 string learner_webster(string search){
     try{
@@ -107,8 +109,8 @@ string learner_webster(string search){
             stringstream out;
            
            
-           cout<<j.size()<<endl; // enter display 
-            for(unsigned entry = 0; entry < (j.size() / 3); entry++){
+           //cout<<j.size()<<endl; // enter display 
+            for(unsigned entry = 0; entry < (j.size() / 2); entry++){
                 try{
                     if(!j[entry]["meta"]["app-shortdef"].empty()){
                         string entry_title = j[entry]["meta"]["app-shortdef"]["hw"].get<string>();
@@ -121,7 +123,7 @@ string learner_webster(string search){
                             }
                            // dic_log << entry_title << endl;
                            
-                           cout<<"\nSearched term: \t"<<entry_title << endl;
+                           cout<<"\nSearching For: \t"<<entry_title << endl;
                            
                             out << "=> " << formatter(entry_title)<<functional_label<< ": \n" << " ";
                             for(unsigned def = 0; def < j[entry]["meta"]["app-shortdef"]["def"].size(); def++){
@@ -165,17 +167,17 @@ string learner_webster(string search){
 }
 
 int main(){
+    Art web;
+    web.webster_big();
 
     std::string qurey;
-    cout<<"\n======================================================================================\n";
-    cout<<"Enter a word to search: ";
-    cin>>qurey;
-    cout<<"\n======================================================================================\n";
     
-    cout<<learner_webster(qurey)<<endl;
-    cout<<"\n======================================================================================\n";
-
-    
+    std::cout<<"\n======================================================================================\n";
+    std::cout<<"Enter a word to search: ";
+    std::cin>>qurey;
+    std::cout<<"\n======================================================================================\n";
+    std::cout<<learner_webster(qurey)<<"\n";
+    std::cout<<"\n======================================================================================\n";
 
 
     return 0;
