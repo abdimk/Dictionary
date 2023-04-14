@@ -1,2 +1,2 @@
-std::string key = "60a0e1ee-b2cc-40f4-9210-787f278c8964";
-std::string link = "https://www.dictionaryapi.com/api/v3/references/learners/json/" + search + "?key=" + key;
+key = "60a0e1ee-b2cc-40f4-9210-787f278c8964";
+link = "https://www.dictionaryapi.com/api/v3/references/learners/json/" + search + "?key=" + key;
