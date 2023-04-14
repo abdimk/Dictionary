@@ -105,9 +105,10 @@ string learner_webster(string search){
         try{
             json j = json::parse(readBuffer);
             stringstream out;
-           // dic_log << "-------------------------------------------------\n";
-           cout<<"=========================================================\n";
-            for(unsigned entry = 0; entry < j.size(); entry++){
+           
+           
+           cout<<j.size()<<endl; // enter display 
+            for(unsigned entry = 0; entry < (j.size() / 3); entry++){
                 try{
                     if(!j[entry]["meta"]["app-shortdef"].empty()){
                         string entry_title = j[entry]["meta"]["app-shortdef"]["hw"].get<string>();
@@ -119,8 +120,10 @@ string learner_webster(string search){
                                 
                             }
                            // dic_log << entry_title << endl;
-                           cout<<"Searched term: \t"<<entry_title << endl;
-                            out << " " << formatter(entry_title)<<functional_label<< ": \n" << " ";
+                           
+                           cout<<"\nSearched term: \t"<<entry_title << endl;
+                           
+                            out << "=> " << formatter(entry_title)<<functional_label<< ": \n" << " ";
                             for(unsigned def = 0; def < j[entry]["meta"]["app-shortdef"]["def"].size(); def++){
                                 string app_def_title;
                                 if("" == j[entry]["meta"]["app-shortdef"]["def"][def]){
@@ -138,6 +141,7 @@ string learner_webster(string search){
                                     }
                                 }
                                 out << "\n";
+                                
                             }
                         }
                     }
@@ -163,9 +167,13 @@ string learner_webster(string search){
 int main(){
 
     std::string qurey;
+    cout<<"\n======================================================================================\n";
     cout<<"Enter a word to search: ";
     cin>>qurey;
+    cout<<"\n======================================================================================\n";
+    
     cout<<learner_webster(qurey)<<endl;
+    cout<<"\n======================================================================================\n";
 
     
 
