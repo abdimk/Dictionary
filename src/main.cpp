@@ -1,7 +1,6 @@
 #include <iostream>
 #include <curl/curl.h>
 #include "Art.h"
-#include "pro.h"
 #include <stdio.h>
 #include <unistd.h>
 #include "json.hpp"
@@ -169,9 +168,11 @@ string learner_webster(string search){
 int main(){
     Art web;
     web.webster_big();
-
+    cout<<"Devlopers: "<<"\n";
+    cout<<"+ Abdisa Merga"<<"\n";
+    cout<<"+ credits for Arash Nemat "<<"\n";
     std::string qurey;
-    
+    while(true){
     std::cout<<"\n======================================================================================\n";
     std::cout<<"Enter a word to search: ";
     std::cin>>qurey;
@@ -179,6 +180,8 @@ int main(){
     std::cout<<learner_webster(qurey)<<"\n";
     std::cout<<"\n======================================================================================\n";
 
+    }
+   
 
     return 0;
 
