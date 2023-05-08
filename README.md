@@ -52,6 +52,10 @@ First clone the repository to your computer
 
 <code>git clone https://github.com/abdimk/Dictionary.git </code>
 
+Head to that folder
+
+<code>cd Dictionary</code>
+
 Use Cmake to build the project
 
 <code>make clear && make </code>
