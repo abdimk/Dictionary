@@ -4,13 +4,13 @@
 <!-- markdownlint-disable MD041 -->
 
 <div align="center">
-	<h1> c++ Dictionary using curl and Merriam Webster Api </h1>
+	<h1> C++ Dictionary using curl and Merriam Webster Api </h1>
 	<a href="">
 			<img src="https://github.com/abdimk/Dictionary/blob/main/Img/1.png" width="700" height="400" alt="screenshot" />
 		</a>
 	<div>
 		<a href="">
-			<img src="https://img.shields.io/crates/v/lune.svg?label=Version" alt="Current Lune library version" />
+			
 		</a>
 		<a href="">
 			<img src="https://shields.io/endpoint?url=https://badges.readysetplay.io/workflow/filiptibell/lune/ci.yaml" alt="CI status" />
@@ -40,11 +40,7 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 ## Features
 
--   🌙 
--   🧰 Collusion detection 
--   📚 custome state and texture
--   🏡 Customizable layout
--   ✏️ Optional built-in library for manipulating SFML 
+<code>// i will be updating this</code>
 
 
 ## Where do I start?
