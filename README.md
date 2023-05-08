@@ -5,6 +5,9 @@
 
 <div align="center">
 	<h1> c++ Dictionary using curl and Merriam Webster Api </h1>
+	<a href="">
+			<img src="https://img.shields.io/crates/v/lune.svg?label=Version" alt="Current Lune library version" />
+		</a>
 	<div>
 		<a href="">
 			<img src="https://img.shields.io/crates/v/lune.svg?label=Version" alt="Current Lune library version" />
