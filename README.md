@@ -50,7 +50,7 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 First clone the repository to your computer
 
-<code>git clone </code>
+<code>git clone https://github.com/abdimk/Dictionary.git </code>
 
 Use Cmake to build the project
 
