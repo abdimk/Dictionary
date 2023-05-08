@@ -64,3 +64,8 @@ Run the project by running
 
 <code>bin/main</code>
 
+
+
+## Credits 
+
+Thanks for [Arash Nemat Zadeh](https://github.com/arashnm80) for the json to text function
