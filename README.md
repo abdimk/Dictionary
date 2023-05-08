@@ -10,7 +10,7 @@
 		</a>
 	<div>
 		<a href="">
-			
+		<img src="https://shields.io/endpoint?url=https://badges.readysetplay.io/workflow/filiptibell/lune/ci.yaml" alt="CI status" />
 		</a>
 		<a href="">
 			<img src="https://shields.io/endpoint?url=https://badges.readysetplay.io/workflow/filiptibell/lune/ci.yaml" alt="CI status" />
