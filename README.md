@@ -50,7 +50,7 @@ First clone the repository to your computer
 <br>
 <p>
 <code>
-	git clone 
+git clone 
 </code>
 </p>
 
@@ -59,6 +59,6 @@ First clone the repository to your computer
 Use Cmake to build the project
 <p>
 <code>
-	make clear && make 
+make clear && make 
 </code>
 </p>
