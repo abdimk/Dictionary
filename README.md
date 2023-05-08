@@ -45,7 +45,7 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 ## Where do I start?
 
-### You need to install curl library else this project will fail on the build process 
+### ⚠️ You need to install curl library else this project will fail on the build process 
 
 
 First clone the repository to your computer
