@@ -37,15 +37,16 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 ## Features
 
--   🌙 Simple light weight game engine with the concept of stack data structure over the SFML library
+-   🌙 
 -   🧰 Collusion detection 
 -   📚 custome state and texture
 -   🏡 Customizable layout
 -   ✏️ Optional built-in library for manipulating SFML 
 
-## Non-goals
-....
 
 ## Where do I start?
 
-Head over to the [installation](https://lune.gitbook.io/lune/home/installation) page to get started using Lune!
+First clone the repository to your computer
+<code>
+	git clone 
+</code>
