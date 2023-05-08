@@ -29,7 +29,8 @@
 
 ## Project Overview
 
-A C++ SFML Simple Snake game with custom game engine [Snake](https://github.com/abdimk/Snake) .
+Merriam webster api read this [Merriam](https://dictionaryapi.com/account/example?)
+Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 
 
