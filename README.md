@@ -48,6 +48,17 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 First clone the repository to your computer
 <br>
+<p>
 <code>
 	git clone 
 </code>
+</p>
+
+<br>
+
+Use Cmake to build the project
+<p>
+<code>
+	make clear && make 
+</code>
+</p>
