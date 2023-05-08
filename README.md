@@ -46,27 +46,18 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 ## Where do I start?
 
-# You need to install curl library else this project will fail on the build process 
+### You need to install curl library else this project will fail on the build process 
 
 
 First clone the repository to your computer
-<p>
-<code>
-git clone 
-</code>
-</p>
 
+<code>git clone </code>
 
 Use Cmake to build the project
-<p>
-<code>
-make clear && make 
-</code>
-</p>
+
+<code>make clear && make </code>
 
 Run the project by running 
-<p>
-<code>
-bin/main
-</code>
-</p>
+
+<code>bin/main</code>
+
