@@ -169,7 +169,7 @@ int main(){
     Art web;
     web.webster_big();
     cout<<"Devlopers: "<<"\n";
-    cout<<"+ Abdisa Merga"<<"\n";
+    cout<<"+Is Group #3 [Abdisa, Walid, Natnael.S, Natnael.D, Habiba]"<<"\n";
     cout<<"+ credits for Arash Nemat "<<"\n";
     std::string qurey;
     while(true){
