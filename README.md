@@ -40,7 +40,6 @@
 Merriam webster api read this [Merriam](https://dictionaryapi.com/account/example?)
 <br>
 Json for modern C++ [Json](https://github.com/nlohmann/json)
-
 libcurl4-openssl-dev [libcurl4](https://github.com/curl/curl)
 
 
