@@ -40,7 +40,11 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 
 ## Features
 
-<code>// i will be updating this</code>
+-  🌙 Fast and Reliable 
+-   🧰 Related terms 
+-   📚 Definition based on context 
+-   🏡 Translations in to amharic[for future]
+-   ✏️  integration with custom systems(bots, websits)[for future]
 
 
 ## Where do I start?
