@@ -77,4 +77,4 @@ Run the project by running
 
 ## Credits 
 
-Thanks for [Arash Nemat Zadeh](https://github.com/arashnm80) for the json to text function
+<storong>Arash Nemat Zadeh</strong>!
