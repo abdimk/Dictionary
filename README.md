@@ -6,7 +6,7 @@
 <div align="center">
 	<h1> C++ Dictionary using curl and Merriam Webster Api </h1>
 	<a href="">
-			<img src="https://github.com/abdimk/Dictionary/blob/main/Img/1.png" width="700" height="400" alt="screenshot" />
+			<img src="https://github.com/abdimk/Dictionary/blob/main/Img/prg.png" width="700" height="400" alt="screenshot" />
 		</a>
 	<div>
 		<a href="">
