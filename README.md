@@ -49,7 +49,7 @@ Json for modern C++ [Json](https://github.com/nlohmann/json)
 -   🧰 Related terms 
 -   📚 Definition based on context 
 -   🏡 Translations in to amharic[for future]
--   ✏️  integration with custom systems(bots, websits)[for future]
+-   ✏️  integration with custom systems(bots, websites)[for future]
 
 
 ## Where do I start?
