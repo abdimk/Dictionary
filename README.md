@@ -4,7 +4,7 @@
 <!-- markdownlint-disable MD041 -->
 
 <div align="center">
-	<h1> C++ Dictionary using curl and Merriam Webster Api </h1>
+	<h1> C++ Dictionary using libCurl and Merriam Webster Api </h1>
 	<a href="">
 			<img src="https://github.com/abdimk/Dictionary/blob/main/Img/prg.png" width="700" height="450" alt="screenshot" />
 		</a>
