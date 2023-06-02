@@ -77,4 +77,4 @@ Run the project by running
 
 ## Credits 
 
-<storong>Arash Nemat Zadeh</strong>!
+<strong>Arash Nemat Zadeh</strong>!
