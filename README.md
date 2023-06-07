@@ -61,7 +61,7 @@ libcurl4-openssl-dev [libcurl4](https://github.com/curl/curl)
 ### ⚠️ You need to install curl library else this project will fail on the build process 
 
 
-First clone the repository to your computer
+<code> sudo apt-get install libcurl4-openssl-dev</code>
 
 <code>git clone https://github.com/abdimk/Dictionary.git </code>
 
