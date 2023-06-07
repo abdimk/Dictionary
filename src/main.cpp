@@ -90,6 +90,23 @@ struct Merriam
         return text;
     }
 
+    // i wote this function in order to filter out "0{bc}" from the definition 
+    string filter_string(string message){
+        string filtered = "";
+        string pattern = "0{bc}";
+        size_t i = 0;
+
+        while (i < message.length()) {
+            if (message.substr(i, pattern.length()) == pattern) {
+                i += pattern.length();
+            } else {
+                filtered += message[i];
+                i++;
+            }
+        }
+
+        return filtered;
+    }
     string learner_webster(string search){
         try{
             CURL *curl;

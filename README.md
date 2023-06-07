@@ -32,6 +32,9 @@
 ---
 ## How does it work 
 <p>  Here is how it works this is a cpp project that uses merriam webster api with json fetch meanings from the api and on the top of that it uses libcurl or curl for short to send a request to the api </p>
+
+
+<p>It defines a <strong>Merriam</strong> struct that contains several methods for formatting and filtering strings, and for querying the Merriam-Webster Learner's Dictionary API. The main function creates an instance of the <strong>Merriam</strong> struct and repeatedly prompts the user to enter a word to search, then prints the definition of that word.
 ---
 
 
