@@ -91,6 +91,7 @@ struct Merriam
     }
 
     // i wote this function in order to filter out "0{bc}" from the definition 
+    // and this function is now working because the json parse have a problem with 0{bc} 
     string filter_string(string message){
         string filtered = "";
         string pattern = "0{bc}";
@@ -187,11 +188,15 @@ struct Merriam
                     return out.str();
                 }
             }catch(...){
-                return "Not found :(";
+                return "Some thing went wrong! check weather your internet is working!";
             }
         }catch(...){
             return "Sorry, Bot couldn't work correctly for this word.\nWe'll work to fix it as soon as possible";
         }
+    }
+
+    void history(int word){
+
     }
 };
 
