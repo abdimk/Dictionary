@@ -195,9 +195,7 @@ struct Merriam
         }
     }
 
-    void history(int word){
-
-    }
+    // write a function to show the history 
 };
 
 int main()
