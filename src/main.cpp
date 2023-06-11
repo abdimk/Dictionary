@@ -108,11 +108,51 @@ struct Merriam
 
         return filtered;
     }
+    // new function to check whether any file exists or not
+    
+    bool fileExists(const string &filename){
+        ifstream file(filename.c_str());
+        return file.good();
+    }
+
+    void history(string text, string def){
+        if(this->fileExists("./mona/history.txt")){ // if the file exists
+            fstream myfile;
+            myfile.open("./mona/history.txt", ios::app);
+            if(myfile.is_open()){
+                myfile<<"\n";
+                myfile<<"Term:"<<text<<"\n";
+                myfile<<"Definition:"<<def<<"\n";
+                myfile.close();
+                myfile<<"\n";
+                
+            }
+            else{
+                cout<<"Error while opening a file"<<endl;
+            }
+
+        }
+        else{ // create a new file 
+            fstream myfile;
+            myfile.open("./mona/history.txt", ios::app);
+            if(myfile.is_open()){
+                myfile<<"\n";
+                myfile<<"Term:"<<text<<"\n";
+                myfile<<"Definition:"<<def<<"\n";
+                myfile.close();
+                myfile<<"\n";
+            }
+            else{
+                cout<<"Error while creating a file"<<endl;
+            }
+        }
+    }
     string learner_webster(string search){
         try{
             CURL *curl;
             // CURLcode res;
             search = lowercase(search);
+            
             std::string readBuffer;
             std::string key;
             fstream token;
@@ -196,6 +236,7 @@ struct Merriam
     }
 
     // write a function to show the history 
+    
 };
 
 int main()
@@ -206,14 +247,18 @@ int main()
     cout<<"Devlopers: "<<"\n";
     cout<<"+Is Group #3 [Abdisa, Walid, Natnael.S, Natnael.D, Habiba]"<<"\n";
     cout<<"+ credits for Arash Nemat "<<"\n";
-    std::string qurey;
+    string qurey;
+    string current_definintion;
     while(true){
-    std::cout<<"\n======================================================================================\n";
-    std::cout<<"Enter a word to search: ";
-    std::cin>>qurey;
-    std::cout<<"\n======================================================================================\n";
-    std::cout<<Dictionary.learner_webster(qurey)<<"\n";
-    std::cout<<"\n======================================================================================\n";
+        cout<<"\n======================================================================================\n";
+        cout<<"Enter a word to search: ";
+        cin>>qurey;
+        
+        cout<<"\n======================================================================================\n";
+        current_definintion = Dictionary.learner_webster(qurey);
+        cout<<current_definintion<<"\n";
+        cout<<"\n======================================================================================\n";
+        Dictionary.history(qurey, current_definintion);
 
     }
 
