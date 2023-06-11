@@ -29,6 +29,8 @@
 - structure has been added.  logs=> [b496f276ba4e0f5ce26ab8b1910b7cfdeec307d6](https://github.com/abdimk/Dictionary/commit/b496f276ba4e0f5ce26ab8b1910b7cfdeec307d6)
 - now token is stored in vars.txt file. logs=> [2c660ee6627a6241213709895d20211197cbc36d](https://github.com/abdimk/Dictionary/commit/2c660ee6627a6241213709895d20211197cbc36d)
 
+- history(way to display the perivious query). logs=> [aa7864e1e4c65b60d039679e39758de1f48d55a7](https://github.com/abdimk/Dictionary/commit/aa7864e1e4c65b60d039679e39758de1f48d55a7)
+
 ---
 ## How does it work 
 <p>  Here is how it works this is a cpp project that uses merriam webster api with json fetch meanings from the api and on the top of that it uses libcurl or curl for short to send a request to the api </p>
