@@ -68,34 +68,34 @@ libcurl4-openssl-dev [libcurl4](https://github.com/curl/curl)
 Assuming you have updated all the current packages let's install curl and libcurl4-openssl-dev 
 
 ```diff
-+ sudo apt-get update && sudo apt-get upgrade
+ sudo apt-get update && sudo apt-get upgrade
 ```
 
 
 ```diff
-+ sudo apt-get install curl && sudo apt-get install libcurl4-openssl-dev
+ sudo apt-get install curl && sudo apt-get install libcurl4-openssl-dev
 ```
 
 Then clone the github repo using
 
 ```diff
-+ git clone https://github.com/abdimk/Dictionary
+ git clone https://github.com/abdimk/Dictionary
 ```
 Head to the repository
 
 ```diff
-+ cd Dictionary
+ cd Dictionary
 ```
 
 Remove the pirvious build and build it again using make
 ```diff
-+ make clean && make
+ make clean && make
 ```
 
 Run the code
 You always need to be /Dictionary directory to run the code don't go to /Dictionary/bin 
 ```diff
-+ bin/main
+ bin/main
 ```
 
 
