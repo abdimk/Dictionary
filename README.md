@@ -99,6 +99,7 @@ You always need to be /Dictionary directory to run the code don't go to /Diction
 ```
 
 **Else you can just use all command at ones**
+<br>
 very unstable but works 
 ```diff
 sudo apt-get install curl && sudo apt-get install libcurl4-openssl-dev && git clone https://github.com/abdimk/Dictionary && cd Dictionary && make clean && make && bin/main
