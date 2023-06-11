@@ -105,5 +105,4 @@ sudo apt-get install curl && sudo apt-get install libcurl4-openssl-dev && git cl
 ```
 
 ## Credits 
-
 <strong>Arash Nemat Zadeh</strong>!
