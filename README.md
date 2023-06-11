@@ -45,6 +45,7 @@
 Merriam webster api read this [Merriam](https://dictionaryapi.com/account/example?)
 <br>
 Json for modern C++ [Json](https://github.com/nlohmann/json)
+<br>
 libcurl4-openssl-dev [libcurl4](https://github.com/curl/curl)
 
 
@@ -58,28 +59,44 @@ libcurl4-openssl-dev [libcurl4](https://github.com/curl/curl)
 -   ✏️  integration with custom systems(bots, websites)[for future]
 
 
-## Where do I start?
+## Where do we start?
 
-### ⚠️ You need to install curl library else this project will fail on the build process 
+### ⚠️ You need to install curl library and libcurl4-openssl-dev else this project will fail on the build process 
+
+## Installation
+
+Assuming you have updated all the current packages let's install curl and libcurl4-openssl-dev 
+
+```diff
++ sudo apt-get update && sudo apt-get upgrade
+```
 
 
+```diff
++ sudo apt-get install curl && sudo apt-get install libcurl4-openssl-dev
+```
 
-<code> sudo apt-get install libcurl4-openssl-dev</code>
+Then clone the github repo using
 
-<code>git clone https://github.com/abdimk/Dictionary.git </code>
+```diff
++ git clone https://github.com/abdimk/Dictionary
+```
+Head to the repository
 
-Head to that folder
+```diff
++ cd Dictionary
+```
 
-<code>cd Dictionary</code>
+Remove the pirvious build and build it again using make
+```diff
++ make clean && make
+```
 
-Use Cmake to build the project
-
-<code>make clear && make </code>
-
-Run the project by running 
-
-<code>bin/main</code>
-
+Run the code
+You always need to be /Dictionary directory to run the code don't go to /Dictionary/bin 
+```diff
++ bin/main
+```
 
 
 ## Credits 
