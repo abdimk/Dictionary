@@ -244,9 +244,9 @@ int main()
     Art web;
     web.webster_big();
     Merriam Dictionary;
-    cout<<"Devlopers: "<<"\n";
-    cout<<"+Is Group #3 [Abdisa, Walid, Natnael.S, Natnael.D, Habiba]"<<"\n";
-    cout<<"+ credits for Arash Nemat "<<"\n";
+    //cout<<"Devlopers: "<<"\n";
+    //cout<<"+Is Group #3 [Abdisa, Walid, Natnael.S, Natnael.D, Habiba]"<<"\n";
+    //cout<<"+ credits for Arash Nemat "<<"\n";
     string qurey;
     string current_definintion;
     while(true){
